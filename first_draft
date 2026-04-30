@@ -1,0 +1,49 @@
+# Decrimento da distância baseada na velocidade
+
+# ||| AINDA NÃO POSSUI ALTERAÇÃO DE VELOCIDADE BASEADA NO INPUT |||
+
+
+
+main:
+
+la x31 dist
+
+la x30 speed
+
+lw x28 0(x31)
+
+lw x29 0(x30)
+
+blt x29 x28 SUBTRACT
+
+SUBTRACT:
+
+AUX:
+
+sub x28 x28 x29
+
+addi x27 x27 1
+
+blt x29 x28 AUX
+
+beq x0 x0 ENDSUBTRACT
+
+ENDSUBTRACT:
+
+sub x28 x28 x28
+
+addi x27 x27 1
+
+beq x0 x0 END
+
+END:
+
+beq x0 x0 END
+
+
+.data
+
+dist: .word 131 150 75 89
+
+
+speed: .word 10 15 20
