@@ -20,72 +20,85 @@ int main()
     printf("1 - Jogar\n2 - Configuracoes\n3 - Sair\n\nDigite aqui: ");
     scanf("%c", &option);
     clear();
-  
-    switch(option){
-        case '1':
-            goto journey;
-            break;
-        case '2':
-            goto config;
-            break;
-        case '3':
-            goto goodbye;
-            break;
-        default:
-            error_msg();
-            goto menu;
-            break;
+    
+    bool verify = 0;
+    
+    if (option == '1'){
+	verify = 1;
+	goto journey;
     }
-        
+
+    if (option == '2'){
+	verify = 1;
+	goto config;
+    }
+
+    if (option == '3'){
+	verify = 1;
+	goto goodbye;
+    }
+
+    if (verify == 0){
+	error_msg();
+	goto menu;
+    }	   
+  
     config:
         printf("Som\n");
         printf("1 - Voltar para o Menu\n2 - Creditos\n\nDigite aqui: ");
         scanf("%c", &option);
         clear();
-        
-        switch(option){
-            case '1':
-                goto menu;
-                break;
-            case '2':
-                goto credits;
-                break;
-            default:
-                error_msg();
-                goto config;
-                break;
-        }
-        return 1;
+
+	verify = 0
+
+	if (option == '1'){
+	    verify = 1;
+	    goto menu;
+	}
+
+	if (option == '2'){
+	    verify = 1;
+	    goto credits;
+	}
+
+	if (verify == 0){
+	    error_msg();
+	    goto config;
+    	}
         
     credits:
         printf("Cuca Beludo - Programador\n\nBenjamin Arrola - Designer\n\n");
         printf("1 - Voltar para o Menu\n2 - Voltar para as Configuracoes\n\nDigite aqui: ");
         scanf("%c", &option);
         clear();
-        
-        switch(option){
-            case '1':
-                goto menu;
-                break;
-            case '2':
-                goto config;
-                break;
-            default:
-                error_msg();
-                goto credits;
-                break;
-        }
+
+
+	verify = 0
+
+	if (option == '1'){
+	    verify = 1;
+	    goto menu;
+	}
+
+	if (option == '2'){
+	    verify = 1;
+	    goto config;
+	}
+
+	if (verify == 0){
+	    error_msg();
+	    goto credits;
+    	}
         
     goodbye:
         printf("Adeus...\n");
-        return 1;
+        return 0;
         
-    
     journey:
         clear();
         printf("O Ano eh 1912.\n\nVoce eh uma pessoa peculiar, decidiu percorrer 5 cidades da Baixada Santista, perai o que eh Baixada Santista, essas cidades nao tem nem nomes.\nMas tem uma populacao, e eles não estão felizes de te verem perambulando na cidade deles.");
         printf("\n\nMas voltando...\n\n");
-        printf("Voce deciciu, junto mais 4 pessoas, percorrer por essas 5 cidades, preparem-se para encontrar diversos desafios!\n\n");
+        printf("Voce decidiu percorrer por essas 5 cidades com mais 4 pessoas, preparem-se para encontrar diversos desafios!\n\n");
             printf("\nMe diga seu nome: ");
             char name[5][30];
             scanf("%s", name[0]);
@@ -123,10 +136,6 @@ int main()
                 }
                 clear(); 
                 printf("Voces sairam para a JORNADA!!!\n");
-                goto real_journey;
         return 1;
-        
-    real_journey:
-        
     return 0;
 }
