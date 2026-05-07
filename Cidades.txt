@@ -1,0 +1,35 @@
+Cidades:
+
+Pré-Bertioga
+	- Voltandaiá (Indaiá)				| 102km	(base)
+	- Avisto Linda (Vista Linda)			| 99km (marco)
+	- Maipinga (Maitinga)				| 184km (marco)
+	- Tranca-baú (Itanhapaú)			| 54km (travessia)
+
+Guarujádeu
+	- Perewhat (Perequê)				| 69km (marco)
+	- Enskyada (Enseada)				| 111km (marco)
+	- Little Hills (Morrinhos)			| 115km (base)
+	- Oak Vicent (Vicente de Carvalho)		| 56km (marco)
+	- Piaçaguerra (Piaçaguera)			| 183km (travessia)
+
+Choça Obscura
+	- Beth Village (Vila Elizabeth)			| 66km (marco)
+	- Paulie Village (Vila Paulista)		| 76km (marco)
+	- Noky Village (Rua Crisciúma)			| 92km (marco)
+	- Easter Village (Vila Natal)			| 84km (marco)
+	- Fisher Village (Vila dos Pescadores)		| 136km (base)
+	- Residente (Casqueiro)				| 47km (travessia)
+
+Profanos
+	- Cheiropó (Saboó)				| 74km (base)
+	- Matt Village (Vila Mathias)			| 132km (marco)
+	- Mafuro (Macuco)				| 136km (marco)
+	- Bo-qué-não (Boqueirão)			| 225km (marco)
+	- Pomonha (Pompéia)				| 96km (marco)
+ 
+Não Vicente
+	- A Longa Marcha				| 800km (travessia)
+
+Areinha
+	- Fim Finalzão d verdade 2.0 agr vai
