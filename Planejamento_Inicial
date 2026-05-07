@@ -1,0 +1,44 @@
+1º Parte:
+
+Menu Principal:
+	1 - Iniciar Jornada
+		2ª Parte
+	2 - Configurações
+		Créditos
+	3 - Sair
+		Encerrar
+
+2ª Parte:
+
+Nomear 5 Tripulantes;
+Escolha a Profissão:
+	- Banqueiro (R$2000):
+		- Mais dinheiro;
+	- Fazendeiro (R$700):
+		- Mais espaço para comida;
+	- Marceneiro (R$950):
+		- Menos tempo e mais durabilidade para consertar a carroça;
+
+3ª Parte:
+
+Comprar inventário:
+	- Gado		(R$50,00/cabeça de gado)
+	- Comida		(R$20,00/kg)
+	- Roupas		(R$2/muda de roupa)
+	- Rodas		(R$15/unidade)
+	- Lona		(R$15/unidade)
+	- Tábuas		(R$6/unidade)
+	- Sair para Jornada (Apenas se tiver 1 gado no mínimo)
+
+4ª Parte (Loop):
+
+Jornada:
+	1 - Continuar na trilha
+	2 - Ver Suprimentos
+	3 - Olhar no mapa
+	4 - Mudar Ritmo
+	5 - Mudar Comida
+	6 - Parar para descansar
+
+(Repetir a 4ª Parte até que não tenha mais cidades)
+	
