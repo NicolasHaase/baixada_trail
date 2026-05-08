@@ -23,11 +23,11 @@ Escolha a Profissão:
 
 Comprar inventário:
 	- Gado		(R$50,00/cabeça de gado)
-	- Comida		(R$20,00/kg)
-	- Roupas		(R$2/muda de roupa)
+	- Comida	(R$20,00/kg)
+	- Roupas	(R$2/muda de roupa)
 	- Rodas		(R$15/unidade)
 	- Lona		(R$15/unidade)
-	- Tábuas		(R$6/unidade)
+	- Tábuas	(R$6/unidade)
 	- Sair para Jornada (Apenas se tiver 1 gado no mínimo)
 
 4ª Parte (Loop):
@@ -39,6 +39,9 @@ Jornada:
 	4 - Mudar Ritmo
 	5 - Mudar Comida
 	6 - Parar para descansar
+	7*- Comprar Itens
 
+*Se passar por uma cidade base, disponível compra de itens
+Para saber quais cidades são base, vá para o arquivo Cidades.
 (Repetir a 4ª Parte até que não tenha mais cidades)
 	
