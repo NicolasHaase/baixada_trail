@@ -10,14 +10,21 @@ Menu Principal:
 
 2ª Parte:
 
-Nomear 5 Tripulantes;
 Escolha a Profissão:
-	- Banqueiro (R$2000):
-		- Mais dinheiro;
-	- Fazendeiro (R$700):
-		- Mais espaço para comida;
-	- Marceneiro (R$950):
-		- Menos tempo e mais durabilidade para consertar a carroça;
+	1. Banqueiro:
+	2. Fazendeiro:
+	3. Marceneiro:
+	4. Informação
+
+Nomear 5 Tripulantes;
+
+Escolher o mês de Partida:
+	1. Março
+	2. Abril
+	3. Maio
+	4. Junho
+	5. Julho
+	6. Dica
 
 3ª Parte:
 
@@ -33,15 +40,48 @@ Comprar inventário:
 4ª Parte (Loop):
 
 Jornada:
-	1 - Continuar na trilha
-	2 - Ver Suprimentos
-	3 - Olhar no mapa
-	4 - Mudar Ritmo
-	5 - Mudar Comida
-	6 - Parar para descansar
-	7*- Comprar Itens
+	Menu:
+		Clima: [Quente, Chuvoso]
+		Saúde: [Boa, Moderada, Ruim]
+		Ritmo: [Constante (10km), Enérgico (15km), Cansativo (20km)]
+		Comida: [Farta, Escasso, Osso]
 
-*Se passar por uma cidade base, disponível compra de itens
-Para saber quais cidades são base, vá para o arquivo Cidades.
+		1 - Continuar na trilha
+		2 - Ver Suprimentos
+		3 - Olhar no mapa
+		4 - Mudar Ritmo
+		5 - Mudar Comida
+		6 - Parar para descansar
+		7 - Tentativa de Troca
+		8 - Falar com pessoas
+		9*- Comprar Itens
+
+		*Se passar por uma cidade base, disponível compra de itens
+		Para saber quais cidades são base, vá para o arquivo Cidades.
+
 (Repetir a 4ª Parte até que não tenha mais cidades)
+
+x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x
+
+Possíveis Eventos
+	- Pouca comida por pouco tempo (Chance de Ganhar comida de Estranhos)
+
+Travessias:
+	- Clima: 
+	- Profundidade (Número entre X e Y)
+	- Largura (Número entre W e Z)
+
+	Escolhas para Travessia:
+		1. Tentar atravessar
+		2. Vedar o vagão e atravessar
+		3. Pegar uma balsa (
+			Valor: R$10
+			Esperar N dias
+		)
+		4. Esperar as condições melhorarem
+			- Aumenta ou Diminui (Profundidade e Largura)
+		5. Informação
+			- Atravessar o rio significa, puxar o vagão pela rasa do rio, com gado junto.
+			- Vedar significa, selar o barco todo, então não vai entrar água. Logo o vagão vira um bote.
+			- Pegar a balsa significa, colocar o vagão em um bote que pertence à alguém. O dono vai te levar, por um preço.
 	
