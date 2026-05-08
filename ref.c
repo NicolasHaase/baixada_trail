@@ -10,6 +10,7 @@ void error_msg(){
 
 int main()
 {
+    int dist_cities = [102, 99, 184, 54, 69, 111, 115, 56, 183, 66, 76, 92, 84, 136, 47, 74, 132, 136, 225, 96, 815];
     menu:
     printf("x-x-x-x-x-x-x-x-x-x- Baixada Trail -x-x-x-x-x-x-x-x-x-x\n\n");
     char option;
