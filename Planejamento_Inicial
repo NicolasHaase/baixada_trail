@@ -12,9 +12,13 @@ Menu Principal:
 
 Escolha a Profissão:
 	1. Banqueiro:
-	2. Fazendeiro:
-	3. Marceneiro:
-	4. Informação
+	2. Marceneiro:
+	3. Fazendeiro:
+	4. Informação:
+		*Explicar a diferença
+		- Banqueiro, ganha mais dinheiro que Fazendeiro e Marceneiro.
+		- Marceneiro... (Criar Diferencial)
+		- Fazendeiro... (Criar Diferencial)
 
 Nomear 5 Tripulantes;
 
@@ -24,17 +28,22 @@ Escolher o mês de Partida:
 	3. Maio
 	4. Junho
 	5. Julho
-	6. Dica
+	6. Informação
+		*História para imersão
+		- Se cedo, não pasto pro gado comer. Se sair tarde, pode pegar chuva...
 
 3ª Parte:
 
 Comprar inventário:
-	- Gado		(R$50,00/cabeça de gado)
-	- Comida	(R$20,00/kg)
-	- Roupas	(R$2/muda de roupa)
-	- Rodas		(R$15/unidade)
-	- Lona		(R$15/unidade)
-	- Tábuas	(R$6/unidade)
+	1. Gado		(R$50,00/cabeça de gado)
+	2. Comida	(R$20,00/kg)
+	3. Roupas	(R$2/muda de roupa)
+	4. Peças do vagão
+		1. Rodas	(R$15/unidade)
+		2. Lona		(R$15/unidade)
+		3. Tábuas	(R$6/unidade)
+		4. Voltar 
+	
 	- Sair para Jornada (Apenas se tiver 1 gado no mínimo)
 
 4ª Parte (Loop):
