@@ -591,7 +591,8 @@ int main(){
 
 
     journey:
-        ///realmente gameplaysssss
+      
+	///Onde irá mostrar o resultado do dia
         printf("  x-x-x-x-x-x-x-x-x-Diário de bordo-x-x-x-x-x-x-x-x-x-x\n");
         printf(" /                                                     \\\n");
         printf("| Data: ex/ex/ex                                        |\n");
@@ -600,8 +601,56 @@ int main(){
         printf("| Comida                                                |\n");
         printf(" \\                                                     /\n");
         printf("  x-x-x-x-x-x-x-Fim do diário de bordox-x-x-x-x-x-x-x-x\n");
-
-
+        
+        printf("\n\nDigite uma das opções:\n1 - Continuar na trilha\n2 - Ver Suprimentos\n3 - Olhar no mapa\n4 - Mudar Ritmo\n5 - Mudar Comida\n6 - Parar para descansar\n7 - Tentativa de Troca\n8 - Falar com pessoas\n9*- Comprar Itens\n");
+            printf("Digite a sua escolha: ");
+            scanf(" %c", &option);
+            
+            if (option == '1'){
+                verify = 1;
+             
+            }
+            
+            if (option == '2'){
+                verify = 1;
+                
+            }
+            
+            if (option == '3'){
+                verify = 1;
+               
+            }
+            
+            if (option == '4'){
+                verify = 1;
+               
+            }
+            if (option == '5'){
+                verify = 1;
+                
+                
+            }if (option == '6'){
+                verify = 1;
+                
+            }
+            if (option == '7'){
+                verify = 1;
+                
+            }
+            if (option == '8'){
+                verify = 1;
+                
+            }
+            
+            if (option == '9'){
+                verify = 1;
+                
+            }
+            
+            if (verify == 0){
+               error_msg();
+               goto menu;
+            }
     return 0;
 }
 
