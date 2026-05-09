@@ -1,12 +1,24 @@
 1º Parte:
 
 Menu Principal:
-	1 - Iniciar Jornada
+	1. Iniciar Jornada:
 		2ª Parte
-	2 - Configurações
-		Créditos
-	3 - Sair
-		Encerrar
+
+	2. Aprender sobre a Trilha:
+		- "Você se encontra em um bar de Pré-Bertioga, um homem extremamente alto, magro, sujo e bêbado não para de falar."
+			1. "Credo cara doido..."
+			2. "Com licença como chego em Areinha?"
+		- "Quer chegar até o outro lado da Baixada, você pode ir pela Serra, mas a estrada não existe ainda, então você terá que pegar a Rota
+		   dos Antigos, você terá que passar por 4 cidades até chegar em Areinha, saindo daqui de Pré-Bertioga, em direção à Guarujá-Deu, depois
+		   vai passar por Cubarage, depois Profanos, saindo de lá você terá que passar pela Longa Marcha de Não Vicente. Será que você consegue ?"
+
+			1. "Quais são os perigos?"
+			2. "Como passarei pelo rios?"
+			3
+	3. Configurações:
+		Créditos;
+	4. Sair:
+		Encerrar;
 
 2ª Parte (Criação de Personagem):
 
@@ -16,9 +28,9 @@ Escolha a Profissão:
 	3. Fazendeiro:
 	4. Informação:
 		*Explicar a diferença
-		- Banqueiro, ganha mais dinheiro que Fazendeiro e Marceneiro (R$1600.00).
-		- Marceneiro... (Criar Diferencial) (R$800.00).
-		- Fazendeiro... (Criar Diferencial) (R$400.00).
+		- Banqueiro, ganha mais dinheiro que Fazendeiro e Marceneiro. (R$1600.00).
+		- Marceneiro, sempre terá sucesso na hora de consertar o vagão. (R$800.00).
+		- Fazendeiro, mais chance de achar comida pelo caminho. (R$400.00).
 
 Nomear 5 Tripulantes;
 
@@ -35,30 +47,30 @@ Escolher o mês de Partida:
 3ª Parte (Compra de Itens na Loja):
 
 Comprar inventário:
-	1. Gado		(R$50,00/cabeça de gado)
-	2. Comida	(R$20,00/kg)
-	3. Roupas	(R$2/muda de roupa)
+	1. Gado		(R$40.00/cabeça de gado)
+	2. Comida	(R$5,00/kg)
+	3. Roupas	(R$10/muda de roupa)
 	4. Peças do vagão
-		1. Rodas	(R$15/unidade)
-		2. Lona		(R$15/unidade)
-		3. Tábuas	(R$6/unidade)
+		1. Rodas	(R$10/unidade)
+		2. Lona		(R$10/unidade)
+		3. Tábuas	(R$10/unidade)
 		4. Voltar 
 	
-	- Sair para Jornada (Apenas se tiver 1 gado no mínimo)
+	*Sair para Jornada (Apenas se tiver 1 gado no mínimo);
 
 4ª Parte (Loop):
 
 Jornada: 
-	*Imagem Bonita
+	*Imagem Bonita;
 
-	Data: Dia/Mês/Ano [ 1 -> 30 / Mês escolhido -> Mês escolhido + 8 / 1912 -> 1913 ]
-	Clima: [Muito Quente, Quente, Agradável, Chuvoso, Frio, Muito Frio]
-	Saúde: [Saudável, Boa, Moderada, Ruim, Pobre]
-	Comida: X Kg
-	Próximo Marco: X Km
-	Km's Viajados: X Km
+	Data: Dia/Mês/Ano [ 1 -> 30 / Mês escolhido -> Mês escolhido + 8 / 1912 -> 1913 ];
+	Clima: [Muito Quente, Quente, Agradável, Chuvoso, Frio, Muito Frio];
+	Saúde: [Saudável, Boa, Moderada, Ruim, Pobre];
+	Comida: X Kg;
+	Próximo Marco: X Km;
+	Km's Viajados: X Km;
 
-	*Apertando Enter -> Menu_Jornada
+	*Apertando Enter -> Menu_Jornada;
 
 Menu_Jornada:
 	Clima: []
@@ -68,43 +80,44 @@ Menu_Jornada:
 
 	1 - Continuar na trilha
 	2 - Ver Suprimentos
-		- Gado							X
-		- Conjunto de Roupas			X
-		- Roda de Vagão					X
-		- Eixo de Vagão					X
-		- Conector do Vagão				X
-		- Quilos de Comida				X
-		- Dinheiro Restante				X
-		*Enter para voltar
+		- Gado							X;
+		- Conjunto de Roupas			X;
+		- Roda de Vagão					X;
+		- Eixo de Vagão					X;
+		- Conector do Vagão				X;
+		- Quilos de Comida				X;
+		- Dinheiro Restante				X;
+		*Enter para voltar;
 
 	3 - Olhar no mapa
-		*Imagem Bonita
-		*Enter para voltar
+		*Imagem Bonita;
+		*Enter para voltar;
 
 	4 - Mudar Ritmo
 		1. Constante (10km e 8 horas de Sono/dia)
-		*1% Chance de Saúde -1
+		*1% Chance de Saúde -1;
 		2. Enérgico (15km e 6 horas de Sono/dia)
-		*5% Chance de Saúde -1
+		*5% Chance de Saúde -1;
 		3. Cansativo (20km e 4 horas de Sono/dia)
-		*10% Chance de Saúde -1
+		*10% Chance de Saúde -1;
 
 	5 - Mudar Comida
 		1. Farta (10kg/dia)
-		*1% Chance de Saúde -1
+		*1% Chance de Saúde -1;
 		2. Escasso (5kg/dia)
-		*5% Chance de Saúde -1
+		*5% Chance de Saúde -1;
 		3. Osso (1kg/dia)
-		*10% Chance de Saúde -1
+		*10% Chance de Saúde -1;
 
 	6 - Parar para descansar
-		*Dia +1, Saúde +1
+		*Perguntar quantos dias quer descansar (Dias X);
+		*Dia +X, Saúde +X <= Bom;
 
 	7 - Tentativa de Troca
-		*Quantidade de Item X pelo Item Y
+		*Quantidade de Item X pelo Item Y;
 
 	8 - Falar com pessoas
-		*Texto fixo por/entre pontos
+		*Texto fixo entre pontos de chegada;
 
 	9*- Comprar Itens
 
@@ -116,15 +129,17 @@ Menu_Jornada:
 x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x
 
 Possíveis Eventos:
-	- Encontrar frutas (+6kg de comida).
+	- Encontrar frutas (+6 Kg de comida).
+	- Roubo (-X Kg de comida)
 	- Pouca comida por pouco tempo (Chance de Ganhar comida de Estranhos [+10kg de comida]).
-	- Tempestade (Perde X dias).
+	- Tempestade/Nevasca (Perde X dias).
 	- Fogo repentina (Perde X Kg de comida)
 	- Infortúnios:
 		- Braço Quebrado
 		- Febre Tifóide
 		- Cólera
-		- Disinteria
+		- Disenteria
+		- Leptospirose
 		- Morte
 		*Fora morte, fica saudável se comer comida farta e descansar por 3 dias
 
