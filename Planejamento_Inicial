@@ -8,7 +8,7 @@ Menu Principal:
 	3 - Sair
 		Encerrar
 
-2ª Parte:
+2ª Parte (Criação de Personagem):
 
 Escolha a Profissão:
 	1. Banqueiro:
@@ -16,9 +16,9 @@ Escolha a Profissão:
 	3. Fazendeiro:
 	4. Informação:
 		*Explicar a diferença
-		- Banqueiro, ganha mais dinheiro que Fazendeiro e Marceneiro.
-		- Marceneiro... (Criar Diferencial)
-		- Fazendeiro... (Criar Diferencial)
+		- Banqueiro, ganha mais dinheiro que Fazendeiro e Marceneiro (R$1600.00).
+		- Marceneiro... (Criar Diferencial) (R$800.00).
+		- Fazendeiro... (Criar Diferencial) (R$400.00).
 
 Nomear 5 Tripulantes;
 
@@ -32,7 +32,7 @@ Escolher o mês de Partida:
 		*História para imersão
 		- Se cedo, não pasto pro gado comer. Se sair tarde, pode pegar chuva...
 
-3ª Parte:
+3ª Parte (Compra de Itens na Loja):
 
 Comprar inventário:
 	1. Gado		(R$50,00/cabeça de gado)
@@ -48,47 +48,104 @@ Comprar inventário:
 
 4ª Parte (Loop):
 
-Jornada:
-	Menu:
-		Clima: [Quente, Chuvoso]
-		Saúde: [Boa, Moderada, Ruim]
-		Ritmo: [Constante (10km), Enérgico (15km), Cansativo (20km)]
-		Comida: [Farta, Escasso, Osso]
+Jornada: 
+	*Imagem Bonita
 
-		1 - Continuar na trilha
-		2 - Ver Suprimentos
-		3 - Olhar no mapa
-		4 - Mudar Ritmo
-		5 - Mudar Comida
-		6 - Parar para descansar
-		7 - Tentativa de Troca
-		8 - Falar com pessoas
-		9*- Comprar Itens
+	Data: Dia/Mês/Ano [ 1 -> 30 / Mês escolhido -> Mês escolhido + 8 / 1912 -> 1913 ]
+	Clima: [Muito Quente, Quente, Agradável, Chuvoso, Frio, Muito Frio]
+	Saúde: [Saudável, Boa, Moderada, Ruim, Pobre]
+	Comida: X Kg
+	Próximo Marco: X Km
+	Km's Viajados: X Km
 
-		*Se passar por uma cidade base, disponível compra de itens
-		Para saber quais cidades são base, vá para o arquivo Cidades.
+	*Apertando Enter -> Menu_Jornada
+
+Menu_Jornada:
+	Clima: []
+	Saúde: []
+	Ritmo: []
+	Comida: []
+
+	1 - Continuar na trilha
+	2 - Ver Suprimentos
+		- Gado							X
+		- Conjunto de Roupas			X
+		- Roda de Vagão					X
+		- Eixo de Vagão					X
+		- Conector do Vagão				X
+		- Quilos de Comida				X
+		- Dinheiro Restante				X
+		*Enter para voltar
+
+	3 - Olhar no mapa
+		*Imagem Bonita
+		*Enter para voltar
+
+	4 - Mudar Ritmo
+		1. Constante (10km e 8 horas de Sono/dia)
+		*1% Chance de Saúde -1
+		2. Enérgico (15km e 6 horas de Sono/dia)
+		*5% Chance de Saúde -1
+		3. Cansativo (20km e 4 horas de Sono/dia)
+		*10% Chance de Saúde -1
+
+	5 - Mudar Comida
+		1. Farta (10kg/dia)
+		*1% Chance de Saúde -1
+		2. Escasso (5kg/dia)
+		*5% Chance de Saúde -1
+		3. Osso (1kg/dia)
+		*10% Chance de Saúde -1
+
+	6 - Parar para descansar
+		*Dia +1, Saúde +1
+
+	7 - Tentativa de Troca
+		*Quantidade de Item X pelo Item Y
+
+	8 - Falar com pessoas
+		*Texto fixo por/entre pontos
+
+	9*- Comprar Itens
+
+	*Se passar por uma cidade base, disponível compra de itens.
+	Para saber quais cidades são base, vá para o arquivo Cidades.
 
 (Repetir a 4ª Parte até que não tenha mais cidades)
 
 x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x
 
-Possíveis Eventos
-	- Pouca comida por pouco tempo (Chance de Ganhar comida de Estranhos)
+Possíveis Eventos:
+	- Encontrar frutas (+6kg de comida).
+	- Pouca comida por pouco tempo (Chance de Ganhar comida de Estranhos [+10kg de comida]).
+	- Tempestade (Perde X dias).
+	- Fogo repentina (Perde X Kg de comida)
+	- Infortúnios:
+		- Braço Quebrado
+		- Febre Tifóide
+		- Cólera
+		- Disinteria
+		- Morte
+		*Fora morte, fica saudável se comer comida farta e descansar por 3 dias
 
 Travessias:
 	- Clima: 
 	- Profundidade (Número entre X e Y)
-	- Largura (Número entre W e Z)
+	- Largura (Número entre X e Y)
 
 	Escolhas para Travessia:
 		1. Tentar atravessar
+
 		2. Vedar o vagão e atravessar
+
 		3. Pegar uma balsa (
 			Valor: R$10
-			Esperar N dias
+			Esperar X dias
 		)
+
 		4. Esperar as condições melhorarem
 			- Aumenta ou Diminui (Profundidade e Largura)
+
 		5. Informação
 			- Atravessar o rio significa, puxar o vagão pela rasa do rio, com gado junto.
 			- Vedar significa, selar o barco todo, então não vai entrar água. Logo o vagão vira um bote.
