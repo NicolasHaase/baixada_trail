@@ -75,11 +75,9 @@ int main(){
 
     credits:
         clear();
-        printf("Cuca Beludo - Programador\n\nBenjamin Arrola - Designer\n\n");
+        printf("Nicolas Haase - Programador\n\nDaniel Santiago - Designer\n\nFelipe Monteiro - Palpitador");
         printf("1 - Voltar para o Menu\n2 - Voltar para as Configuracoes\n\nDigite aqui: ");
         scanf(" %c", &option);
-
-
 
 	verify = 0;
 
@@ -104,21 +102,21 @@ int main(){
         printf("Adeus...\n");
         return 0;
 
-
     jobs:
         clear();
         /// escolhas para as profissões (banqueiro, carpinteiro, fazendeiro e informações adicionais)
-        printf("teixxxxtoxxx\n");
+        printf("Há muitas pessoas que querem atravessar a Baixada.\n Você seria:\n\n");
+		printf("1. Agiota de Guarujádeu\n2. Químico de Cubarage\n3. Chicoteador de Pré-Bertioga\n4. Qual a diferença entre eles...\n\nQual sua opção: ");
 
 
-        /**
+        /*
         opções na ordem:
 
-        banqueiro = 1600
+        Agiota = 1600
 
-        carpinteiro = 800
+        Químico = 800
 
-        fazendeiro = 400
+        Chicoteador = 400
         */
 
         printf("Digite a sua escolha: ");
@@ -155,7 +153,14 @@ int main(){
         }
 
         info:
-            /// informações
+            printf("- Atravessar a Baixada não é fácil, mas sendo um Agiota você tem mais dinheiro e tem menos chance de ser roubado.\n\n");
+			printf("- Porém, se for um Químico, terá menos chance de pegar doenças.\n\n");
+			printf("- Agora, um Chicoteador, 'você' terá mais sucesso em 'achar' comida por aí, se me entende bem.\n\nEntendeu [S/N]: ");
+
+			/*
+			if pra escolha com verificação voltando pra jobs, se o usuário não entendeu jogar de novo pra info
+			*/
+			
             goto jobs;
 
 
@@ -215,12 +220,13 @@ int main(){
 
 
     departure:
-        printf("escolhe um mes ai seu dodoi\n");
+        printf("O ano é 1912, você está se preparando uma viagem cruzando a Baixada Santista, saindo de Pré-Bertioga, indo pra Areinha.");
+		printf("Escolha o mês de Partida: \n\n");
+
+		printf("1. Maio\n2. Junho\n3. Julho\n4. Agosto\n5. Setembro\n6. Dica\n");
 
         printf("Digite a sua escolha: ");
         scanf(" %c", &option);
-        /// 5 meses de escolha (maio - setembro)
-        /// 6 opções (uma de dica - abobrinha)
 
         verify = 0;
 
@@ -257,13 +263,24 @@ int main(){
         if (option == '6'){
             verify = 1;
             clear();
-            goto shop;
+            goto hint;
         }
 
         if (verify == 0){
             error_msg();
             goto departure;
         }
+
+	hint:
+		printf("Se você sair muito cedo, pode não ter comida ao longo do caminho, nem pra você, e nem para o seu gado.");
+		printf("Se sair muito tarde, a chuva pode te pegar e você ficará nas mãos da sorte...");
+		printf("Escolha o mês certo, assim terá mais chances de sobreviver.\n\nEntendeu [S/N]: ");
+
+			/*
+			if pra escolha com verificação voltando pra departure, se o usuário não entendeu jogar de novo pra hint
+			*/
+
+		goto departure;
 
 
     shop:
