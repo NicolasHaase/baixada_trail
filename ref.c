@@ -592,8 +592,14 @@ int main(){
 
     journey:
         ///realmente gameplaysssss
-
-
+        printf("  x-x-x-x-x-x-x-x-x-Diário de bordo-x-x-x-x-x-x-x-x-x-x\n");
+        printf(" /                                                     \\\n");
+        printf("| Data: ex/ex/ex                                        |\n");
+        printf("| Clima                                                 |\n");
+        printf("| Ritmo                                                 |\n");
+        printf("| Comida                                                |\n");
+        printf(" \\                                                     /\n");
+        printf("  x-x-x-x-x-x-x-Fim do diário de bordox-x-x-x-x-x-x-x-x\n");
 
 
     return 0;
