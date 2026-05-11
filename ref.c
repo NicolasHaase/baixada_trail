@@ -75,41 +75,38 @@ int main(){
 
     credits:
         clear();
-        printf("Nicolas Haase - Programador\n\nDaniel Santiago - Designer\n\nFelipe Monteiro - Palpitador");
+        printf("Nicolas Haase - Programador\n\nDaniel Santiago - Designer\n\nFelipe Monteiro - Palpitador\n\n");
         printf("1 - Voltar para o Menu\n2 - Voltar para as Configuracoes\n\nDigite aqui: ");
         scanf(" %c", &option);
 
-	verify = 0;
+        verify = 0;
 
-	if (option == '1'){
-	    verify = 1;
-	    clear();
-	    goto menu;
-	}
-
-	if (option == '2'){
-	    verify = 1;
-	    goto config;
-	}
-
-	if (verify == 0){
-	    error_msg();
-	    goto credits;
-    }
-
-    goodbye:
-        clear();
-        printf("Adeus...\n");
-        return 0;
+        if (option == '1'){
+            verify = 1;
+            clear();
+            goto menu;
+        }
+        if (option == '2'){
+            verify = 1;
+            goto config;
+        }
+        if (verify == 0){
+            error_msg();
+            goto credits;
+        }
+        goodbye:
+            clear();
+            printf("Adeus...\n");
+            return 0;
 
     jobs:
         clear();
         /// escolhas para as profissões (banqueiro, carpinteiro, fazendeiro e informações adicionais)
-        printf("Há muitas pessoas que querem atravessar a Baixada.\n Você seria:\n\n");
-		printf("1. Agiota de Guarujádeu\n2. Químico de Cubarage\n3. Chicoteador de Pré-Bertioga\n4. Qual a diferença entre eles...\n\nQual sua opção: ");
+        printf("Ha muitas pessoas que querem atravessar a Baixada.\nVoce seria:\n\n");
+		printf("1. Agiota de Guarujadeu\n2. Quimico de Cubarage\n3. Chicoteador de Pre-Bertioga\n4. Qual a diferenca entre eles...\n\nQual sua opcao: ");
 
 
-        /*
+        /**
         opções na ordem:
 
         Agiota = 1600
@@ -129,44 +126,62 @@ int main(){
             dinheiro = 1600;
             goto naming;
         }
-
         if (option == '2'){
             verify = 1;
             dinheiro = 800;
             goto naming;
         }
-
         if (option == '3'){
             verify = 1;
             dinheiro = 400;
             goto naming;
         }
-
         if (option == '4'){
             verify = 1;
             goto info;
         }
-
         if (verify == 0){
             error_msg();
             goto jobs;
         }
 
         info:
-            printf("- Atravessar a Baixada não é fácil, mas sendo um Agiota você tem mais dinheiro e tem menos chance de ser roubado.\n\n");
-			printf("- Porém, se for um Químico, terá menos chance de pegar doenças.\n\n");
-			printf("- Agora, um Chicoteador, 'você' terá mais sucesso em 'achar' comida por aí, se me entende bem.\n\nEntendeu [S/N]: ");
+            clear();
+            printf("- Atravessar a Baixada nao e facil, mas sendo um Agiota voce tem mais dinheiro e tem menos chance de ser roubado.\n\n");
+			printf("- Porem, se for um Quimico, tera menos chance de pegar doencas.\n\n");
+			printf("- Agora, um Chicoteador, 'voce' tera mais sucesso em 'achar' comida por ai, se me entende bem.\n\nEntendeu [S/N]: ");
 
-			/*
-			if pra escolha com verificação voltando pra jobs, se o usuário não entendeu jogar de novo pra info
-			*/
-			
+			scanf(" %c", &option);
+
+			verify = 0;
+
+            if (option == 's'){
+                verify = 1;
+                goto jobs;
+            }
+            if (option == 'S'){
+                verify = 1;
+                goto jobs;
+            }
+            if (option == 'n'){
+                verify = 1;
+                clear();
+                goto info;
+            }
+            if (option == 'N'){
+                verify = 1;
+                clear();
+                goto info;
+            }
+            if (verify == 0){
+                error_msg();
+                goto info;
+            }
             goto jobs;
-
 
     naming:
         clear();
-        printf("O Ano eh 1912.\n\nVoce eh uma pessoa peculiar, decidiu percorrer 5 cidades da Baixada Santista, perai o que eh Baixada Santista, essas cidades nao tem nem nomes.\nMas tem uma populacao, e eles não estão felizes de te verem perambulando na cidade deles.");
+        printf("O Ano eh 1912.\n\nVoce eh uma pessoa peculiar, decidiu percorrer 5 cidades da Baixada Santista, perai o que eh Baixada Santista, essas cidades nao tem nem nomes.\nMas tem uma populacao, e eles nao estao felizes de te verem perambulando na cidade deles.");
         printf("\n\nMas voltando...\n\n");
         printf("Voce decidiu percorrer por essas 5 cidades com mais 4 pessoas, preparem-se para encontrar diversos desafios!\n\n");
         printf("\nMe diga seu nome: ");
@@ -220,10 +235,10 @@ int main(){
 
 
     departure:
-        printf("O ano é 1912, você está se preparando uma viagem cruzando a Baixada Santista, saindo de Pré-Bertioga, indo pra Areinha.");
-		printf("Escolha o mês de Partida: \n\n");
+        printf("O ano eh 1912, voce esta se preparando uma viagem cruzando a Baixada Santista, saindo de Pre-Bertioga, indo pra Areinha.");
+		printf("Escolha o mes de Partida: \n\n");
 
-		printf("1. Maio\n2. Junho\n3. Julho\n4. Agosto\n5. Setembro\n6. Dica\n");
+		printf("1. Maio\n2. Junho\n3. Julho\n4. Agosto\n5. Setembro\n6. Dica\n\n");
 
         printf("Digite a sua escolha: ");
         scanf(" %c", &option);
@@ -272,11 +287,39 @@ int main(){
         }
 
 	hint:
-		printf("Se você sair muito cedo, pode não ter comida ao longo do caminho, nem pra você, e nem para o seu gado.");
-		printf("Se sair muito tarde, a chuva pode te pegar e você ficará nas mãos da sorte...");
-		printf("Escolha o mês certo, assim terá mais chances de sobreviver.\n\nEntendeu [S/N]: ");
+		printf("Se voce sair muito cedo, pode nao ter comida ao longo do caminho, nem pra voce, e nem para o seu gado.\n");
+		printf("Se sair muito tarde, a chuva pode te pegar e voce ficara nas maos da sorte...\n");
+		printf("Escolha o mes certo, assim tera mais chances de sobreviver.\n\nEntendeu [S/N]: ");
+		scanf(" %c", &option);
 
-			/*
+		verify = 0;
+
+            if (option == 's'){
+                verify = 1;
+                clear();
+                goto departure;
+            }
+            if (option == 'S'){
+                verify = 1;
+                clear();
+                goto departure;
+            }
+            if (option == 'n'){
+                verify = 1;
+                clear();
+                goto hint;
+            }
+            if (option == 'N'){
+                verify = 1;
+                clear();
+                goto hint;
+            }
+            if (verify == 0){
+                error_msg();
+                goto hint;
+            }
+
+			/**
 			if pra escolha com verificação voltando pra departure, se o usuário não entendeu jogar de novo pra hint
 			*/
 
@@ -308,7 +351,7 @@ int main(){
         */
 
 
-        printf("opções:\n1 - dupla de gado\n2 - comida\n3 - roupa\n4 - peças de reposição\n5 - inventario\n6 - continuar\n");
+        printf("opcoes:\n1 - dupla de gado\n2 - comida\n3 - roupa\n4 - peças de reposicao\n5 - inventario\n6 - continuar\n");
 
         carteira(dinheiro);
 
@@ -322,43 +365,36 @@ int main(){
             clear();
             goto purchase_one;
         }
-
         if (option == '2'){
             verify = 1;
             clear();
             goto purchase_one;
         }
-
         if (option == '3'){
             verify = 1;
             clear();
             goto purchase_one;
         }
-
         if (option == '4'){
             verify = 1;
             clear();
             goto spare_parts;
         }
-
         if (option == '5'){
             verify = 1;
             clear();
             inventory(qtd_gado, qtd_comida, qtd_roupa, qtd_roda, qtd_eixo, qtd_conector);
             goto shop;
         }
-
         if (option == '6'){
             verify = 1;
             clear();
             goto journey;
         }
-
         if (verify == 0){
             error_msg();
             goto shop;
         }
-
         purchase_one:
             /// GADO
             if (option == '1'){
@@ -394,7 +430,6 @@ int main(){
                     goto shop;
                 }
             }
-
             /// COMIDA
             if (option == '2'){
                 printf("DICA: uga buga\n");
@@ -413,23 +448,19 @@ int main(){
                     printf("Compra nao efetuada\n");
                     goto shop;
                 }
-
                 if(escolha_compra == 'N'){
                     printf("Compra nao efetuada\n");
                     goto shop;
                 }
-
                 if(escolha_compra == 's'){
                     verificacao_compra(&dinheiro, valor, &qtd_comida, quantidade_compras);
                     goto shop;
                 }
-
                 if(escolha_compra == 'S'){
                     verificacao_compra(&dinheiro, valor, &qtd_comida, quantidade_compras);
                     goto shop;
                 }
             }
-
             /// ROUPA
             if (option == '3'){
                 printf("DICA: uga buga\n");
@@ -448,26 +479,22 @@ int main(){
                     printf("Compra nao efetuada\n");
                     goto shop;
                 }
-
                 if(escolha_compra == 'N'){
                     printf("Compra nao efetuada\n");
                     goto shop;
                 }
-
                 if(escolha_compra == 's'){
                     verificacao_compra(&dinheiro, valor, &qtd_roupa, quantidade_compras);
                     goto shop;
                 }
-
                 if(escolha_compra == 'S'){
                     verificacao_compra(&dinheiro, valor, &qtd_roupa, quantidade_compras);
                     goto shop;
                 }
             }
 
-
         spare_parts:
-            printf("opções:1 - roda\n2 - eixo\n3 - conector\n4 - sair\n");
+            printf("opcoes:1 - roda\n2 - eixo\n3 - conector\n4 - sair\n");
             printf("Digite a sua escolha: ");
             scanf(" %c", &option);
 
@@ -476,13 +503,11 @@ int main(){
                 clear();
                 goto purchase_two;
             }
-
             if (option == '2'){
                 verify = 1;
                 clear();
                 goto purchase_two;
             }
-
             if (option == '3'){
                 verify = 1;
                 clear();
@@ -493,12 +518,10 @@ int main(){
                 clear();
                 goto shop;
             }
-
             if (verify == 0){
                 error_msg();
                 goto spare_parts;
             }
-
         purchase_two:
             /// RODA
             if (option == '1'){
@@ -608,62 +631,62 @@ int main(){
 
 
     journey:
-      
+
 	///Onde irá mostrar o resultado do dia
-        printf("  x-x-x-x-x-x-x-x-x-Diário de bordo-x-x-x-x-x-x-x-x-x-x\n");
-        printf(" /                                                     \\\n");
+        printf("  x-x-x-x-x-x-x-x-x-Diario de bordo-x-x-x-x-x-x-x-x-x-x\n");
+        printf(" /                                                      \\n");
         printf("| Data: ex/ex/ex                                        |\n");
         printf("| Clima                                                 |\n");
         printf("| Ritmo                                                 |\n");
         printf("| Comida                                                |\n");
-        printf(" \\                                                     /\n");
-        printf("  x-x-x-x-x-x-x-Fim do diário de bordox-x-x-x-x-x-x-x-x\n");
-        
-        printf("\n\nDigite uma das opções:\n1 - Continuar na trilha\n2 - Ver Suprimentos\n3 - Olhar no mapa\n4 - Mudar Ritmo\n5 - Mudar Comida\n6 - Parar para descansar\n7 - Tentativa de Troca\n8 - Falar com pessoas\n9*- Comprar Itens\n");
+        printf(" \                                                      /\n");
+        printf("  x-x-x-x-x-x-x-Fim do diario de bordox-x-x-x-x-x-x-x-x\n");
+
+        printf("\n\nDigite uma das opcoes:\n1 - Continuar na trilha\n2 - Ver Suprimentos\n3 - Olhar no mapa\n4 - Mudar Ritmo\n5 - Mudar Comida\n6 - Parar para descansar\n7 - Tentativa de Troca\n8 - Falar com pessoas\n9*- Comprar Itens\n");
             printf("Digite a sua escolha: ");
             scanf(" %c", &option);
-            
+
             if (option == '1'){
                 verify = 1;
-             
+
             }
-            
+
             if (option == '2'){
                 verify = 1;
-                
+
             }
-            
+
             if (option == '3'){
                 verify = 1;
-               
+
             }
-            
+
             if (option == '4'){
                 verify = 1;
-               
+
             }
             if (option == '5'){
                 verify = 1;
-                
-                
+
+
             }if (option == '6'){
                 verify = 1;
-                
+
             }
             if (option == '7'){
                 verify = 1;
-                
+
             }
             if (option == '8'){
                 verify = 1;
-                
+
             }
-            
+
             if (option == '9'){
                 verify = 1;
-                
+
             }
-            
+
             if (verify == 0){
                error_msg();
                goto menu;
