@@ -13,7 +13,10 @@ void inventory(int qtd_gado, int qtd_comida, int qtd_roupa, int qtd_roda, int qt
 
 int main(){
     int dist_cities[21] = {102, 99, 184, 54, 69, 111, 115, 56, 183, 66, 76, 92, 84, 136, 47, 74, 132, 136, 225, 96, 815};
-    int dinheiro = 0, quantidade_compras = 0, valor = 0;
+    const char* name_cities[] = {
+		"Voltandaia", "Avisto Linda", "Maipinga", "Tranca-Bau", "Perewhat", "Enskyada", "Little Hills", "Oak Vicent", "Piacaguerra", "Beth Village", "Paulie Village", "Noky Village", "Easter Village", "Fisher Village", "Residente", "Cheiropo", "Matt Village", "Mafuro",  "Bo-que-nao", "Pomonha", "A Longa Marcha" 
+	};
+	int dinheiro = 0, quantidade_compras = 0, valor = 0;
     char escolha_compra;
     ///valor inicial dos itens
     int gado = 40, comida = 5, roupa = 10, roda = 10, eixo = 10, conector = 10;
