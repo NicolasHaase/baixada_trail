@@ -27,7 +27,7 @@ int main(){
     menu:
     printf("x-x-x-x-x-x-x-x-x-x- Baixada Trail -x-x-x-x-x-x-x-x-x-x\n\n");
     char option;
-    printf("1 - Jogar\n2 - Configuracoes\n3 - Sair\n\nDigite aqui: ");
+    printf("1 - Jogar\n2 - Historia\n3 - Configuracoes\n4 - Sair\n\nDigite aqui: ");
     scanf(" %c", &option);
 
     bool verify = 0;
@@ -37,12 +37,17 @@ int main(){
         goto jobs;
     }
 
-    if (option == '2'){
+	if (option == '2'){
+		verify = 1;
+		goto story;
+	}
+
+    if (option == '3'){
         verify = 1;
         goto config;
     }
 
-    if (option == '3'){
+    if (option == '4'){
         verify = 1;
         goto goodbye;
     }
@@ -51,6 +56,15 @@ int main(){
         error_msg();
         goto menu;
     }
+
+	story:
+		printf("Muitas pessoas querem atravessar a Baixada Santista, mas espera, o que eh Santos? O que eh Baixada? Estamos no litoral de Santa Paula, essas 5 cidades, sao uma verdadeira armadilha para os desavisados, tipo voce com essa cara de mongo...\n\n");
+		printf("Cada cidade tem os seus perigos:\n\nPre-Bertioga: Muitas tribos pela regiao tem o costume de atacar os viajantes que passam perto de suas areas, alem da vida animal que pode atacar se andarem devagar.\n\n");
+		printf("Guarujadeu: Uma area rica de recursos, porem o pecado da ganancia corre solto por aquelas terras, uma verdadeira nacao dos ladroes, uma boa tatica pra passar por la eh nao ter posses de valor.\n\n");
+		printf("Cubarage: Uma terra feita de lixo e ferro, o chao possui um cheiro horrivel e uma textura pior ainda, nao existe vida vegetal, apenas aglomerados de carne podre e pecas roboticas, acredito que eles sao os 'habitantes' daquela regiao, nao conheco muito aquela regiao, mas eu sairia de la o mais rapido possivel...\n\n");
+		printf("Profanos: Nao ha muitas pessoas por la, e que chegaram menos ainda, uma terra assolada por enchentes torrenciais, a qualquer momento pode ser pego por uma tempestade, a agua vai subir de um dia para o outro e voce tera que transformar seu vagao num bote, os corajosos que foram e conseguiram voltar dizem que se deve levar pecas de sobra.\n\n");
+		printf("Nao-Vicente: Poucas pessoas conseguiram ver essa terra, uma regiao podre, cinza e cercada pela morte, nao ha relatos de pessoas que passaram pela 'Longa Marcha', apenas pessoas que viram outras perecerem a distancia.");
+		///colocar um goto para menu:
 
     config:
         clear();
@@ -78,7 +92,7 @@ int main(){
 
     credits:
         clear();
-        printf("Nicolas Haase - Programador\n\nDaniel Santiago - Designer\n\nFelipe Monteiro - Palpitador\n\n");
+        printf("Nicolas Haase - Programador\n\nDaniel Santiago - Designer\n\nFelipe Monteiro - Idealizador\n\n");
         printf("1 - Voltar para o Menu\n2 - Voltar para as Configuracoes\n\nDigite aqui: ");
         scanf(" %c", &option);
 
@@ -105,7 +119,8 @@ int main(){
     jobs:
         clear();
         /// escolhas para as profissões (banqueiro, carpinteiro, fazendeiro e informações adicionais)
-        printf("Ha muitas pessoas que querem atravessar a Baixada.\nVoce seria:\n\n");
+        printf("*Um ser vivo, voce nao sabe se 'isso' eh humano, se aproxima de voce, e com uma voz rouca e fina ao mesmo tempo*\n\n");
+		printf("Voce decidiu atravessar a Baixada, eh admiravel, apenas os mais habilidosos conseguem chegar no minimo em Cubarage, me diz...\n\nVoce seria um:\n\n");
 		printf("1. Agiota de Guarujadeu\n2. Quimico de Cubarage\n3. Chicoteador de Pre-Bertioga\n4. Qual a diferenca entre eles...\n\nQual sua opcao: ");
 
 
@@ -149,7 +164,6 @@ int main(){
         }
 
         info:
-            clear();
             printf("- Atravessar a Baixada nao e facil, mas sendo um Agiota voce tem mais dinheiro e tem menos chance de ser roubado.\n\n");
 			printf("- Porem, se for um Quimico, tera menos chance de pegar doencas.\n\n");
 			printf("- Agora, um Chicoteador, 'voce' tera mais sucesso em 'achar' comida por ai, se me entende bem.\n\nEntendeu [S/N]: ");
@@ -183,27 +197,24 @@ int main(){
             goto jobs;
 
     naming:
-        clear();
-        printf("O Ano eh 1912.\n\nVoce eh uma pessoa peculiar, decidiu percorrer 5 cidades da Baixada Santista, perai o que eh Baixada Santista, essas cidades nao tem nem nomes.\nMas tem uma populacao, e eles nao estao felizes de te verem perambulando na cidade deles.");
-        printf("\n\nMas voltando...\n\n");
-        printf("Voce decidiu percorrer por essas 5 cidades com mais 4 pessoas, preparem-se para encontrar diversos desafios!\n\n");
-        printf("\nMe diga seu nome: ");
+		printf("*Um homem sem um olho se aproxima de voce, com uma caneta e um papel*\n\n");
+        printf("- Apenas os corajosos tem o eh necessario para atravessar o litoral de Santa Paula, eu estou registrando o nome daqueles que partiram para a jornada, saiba que nem todos conseguiram sobreviver, mas bem...\nMe diga seu nome: ");
         char name[5][30];
         scanf("%s", name[0]);
 
-        printf("Ok %s, agora me diga o nome dos seus companheiros.\n", name[0]);
+        printf("- Ok %s, agora me diga o nome dos seus companheiros.\n", name[0]);
         int i;
         for(i = 1; i <= 4; i++){
-            printf("Capanga %d: ", i);
+            printf("Membro %d: ", i);
             scanf(" %s", name[i]);
         }
 
         choose_right:
-            printf("Sua equipe eh formada por: \n");
+            printf("- Sua equipe eh formada por: \n");
             for(i = 0; i < 5; i++){
                 printf("%s\n", name[i]);
             }
-            printf("\n\nQuer renomear alguem da equipe?[S/N] ");
+            printf("\n\n- Quer renomear alguem da equipe?[S/N] ");
             scanf(" %c", &option);
 
 
@@ -238,7 +249,7 @@ int main(){
 
 
     departure:
-        printf("O ano eh 1912, voce esta se preparando uma viagem cruzando a Baixada Santista, saindo de Pre-Bertioga, indo pra Areinha.");
+        printf("O ano eh 1912, voce esta se preparando uma viagem cruzando o Litoral de Santa Paula, saindo de Pre-Bertioga, indo pra Areinha.");
 		printf("Escolha o mes de Partida: \n\n");
 
 		printf("1. Maio\n2. Junho\n3. Julho\n4. Agosto\n5. Setembro\n6. Dica\n\n");
@@ -291,7 +302,7 @@ int main(){
 
 	hint:
 		printf("Se voce sair muito cedo, pode nao ter comida ao longo do caminho, nem pra voce, e nem para o seu gado.\n");
-		printf("Se sair muito tarde, a chuva pode te pegar e voce ficara nas maos da sorte...\n");
+		printf("Se sair muito tarde, as chuvas de Profanos podem te pegar e voce ficara nas maos da sorte...\n");
 		printf("Escolha o mes certo, assim tera mais chances de sobreviver.\n\nEntendeu [S/N]: ");
 		scanf(" %c", &option);
 
@@ -330,6 +341,19 @@ int main(){
 
 
     shop:
+		printf("*Prestes a sair de Pre-Bertioga, um homem com um belo bigode se aproxima e diz*\n\n");
+		printf("Tem certeza que quer sair assim? Sem nada? Voce pode comprar algumas coisas na minha loja se quiser...\nAlias me nome eh Tadeu.\n\n");
+		/// escolha se quer ir pra loja ou nao
+		/** 
+		
+		if option == 'N' || 'n'
+			printf("Ok, pelo menos leve esse par de gados, e esses suprimentos, embora eu procure o lucro maximo, me doi ver voce saindo se nada numa jornada perigosa");
+		
+		if option == 'S' || 's'	
+			printf("Beleza, pode chegar chegando...");
+			continuar pra shop.
+		
+		*/
         /// loijinha
 
 
@@ -353,8 +377,8 @@ int main(){
 
         */
 
-
-        printf("opcoes:\n1 - dupla de gado\n2 - comida\n3 - roupa\n4 - peças de reposicao\n5 - inventario\n6 - continuar\n");
+		
+        printf("Opcoes:\n1 - Par de Gado\n2 - Comidas\n3 - Roupas\n4 - Pecas de Reposicao\n5 - Inventario\n6 - Continuar\n");
 
         carteira(dinheiro);
 
@@ -404,7 +428,7 @@ int main(){
                 printf("DICA: uga buga\n");
 
                 carteira(dinheiro);
-                printf("quantidade a comprar: ");
+                printf("Quantidade a comprar: ");
                 scanf("%d", &quantidade_compras);
 
                 valor = quantidade_compras * gado;
