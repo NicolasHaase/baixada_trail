@@ -673,42 +673,55 @@ int main(){
             printf("Digite a sua escolha: ");
             scanf(" %c", &option);
 
+			// Continuar a Jornada
             if (option == '1'){
                 verify = 1;
 
             }
-
+			// Ver os suprimentos (Qte de gado vivo, Kg de comida, mudas de roupa e Qte de cada peca de reposicao)
             if (option == '2'){
                 verify = 1;
 
             }
 
+			// Se possivel colocar uma imagem da Baixada
             if (option == '3'){
                 verify = 1;
 
             }
 
+			// Opcao de mudar o ritmo de caminhada (1 - Constante (10Km por dia)  , 2 - Energico (15Km por dia)  , 3 - Excruciante (20Km por dia)  , 4 - Sair)
             if (option == '4'){
                 verify = 1;
 
             }
+
+			// Opcao para mudar o tipo de comida
             if (option == '5'){
                 verify = 1;
 
 
-            }if (option == '6'){
-                verify = 1;
+            }
+	
+			// Descanca durante um dia
+			if (option == '6'){
+            verify = 1;
 
             }
+
+			// Opcao de troca de um item por outro
             if (option == '7'){
                 verify = 1;
 
             }
+
+			// Texto fixo entre as cidades e nas proprias cidades
             if (option == '8'){
                 verify = 1;
 
             }
 
+			// Opcao quando esta numa cidade base
             if (option == '9'){
                 verify = 1;
 
