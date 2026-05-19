@@ -425,7 +425,7 @@ int main(){
         purchase_one:
             /// GADO
             if (option == '1'){
-                printf("DICA: uga buga\n");
+                printf("DICA:\n - Vai levar algumas cabeças de gado, voce ate que sabe das coisas, apesar da sua cara, quanto mais cabeças levar, mais suprimentos vai poder carregar!\n - Ah! Mais uma coisa, eles estao em promocao, na compra de um gado, ganhe outro por conta da casa!\n*Ele pisca um olho para voce\n");
 
                 carteira(dinheiro);
                 printf("Quantidade a comprar: ");
@@ -433,17 +433,17 @@ int main(){
 
                 valor = quantidade_compras * gado;
 
-                printf("Sua compra vai dar %d, deseja efetuar o pagamento? [S/N] ", valor);
+                printf("Na compra de %d par(es) de gado, sua compra sera %d, deseja efetuar o pagamento? [S/N] ", quantidade_compras, valor);
                 scanf(" %c", &escolha_compra);
 
                 if(escolha_compra == 'n'){
                     clear();
-                    printf("Compra nao efetuada\n");
+                    printf("Sem saldo na carteira...\n");
                     goto shop;
                 }
 
                 if(escolha_compra == 'N'){
-                    printf("Compra nao efetuada\n");
+                    printf("Sem saldo na carteira...\n");
                     goto shop;
                 }
 
@@ -459,7 +459,7 @@ int main(){
             }
             /// COMIDA
             if (option == '2'){
-                printf("DICA: uga buga\n");
+                printf("DICA:\n - Comida eh um trem importante, com ela voce nao passa fome, te deixa feliz, alem disso, voce pode esfregar na cara do amiguinho que ele nao tem! \n*Ele se apoia no balcao e faz um gesto obsceno para a loja do outro lado da rua\n");
 
                 carteira(dinheiro);
                 printf("quantidade a comprar: ");
@@ -472,11 +472,11 @@ int main(){
 
                 if(escolha_compra == 'n'){
                     clear();
-                    printf("Compra nao efetuada\n");
+                    printf("Sem saldo na carteira...\n");
                     goto shop;
                 }
                 if(escolha_compra == 'N'){
-                    printf("Compra nao efetuada\n");
+                    printf("Sem saldo na carteira...\n");
                     goto shop;
                 }
                 if(escolha_compra == 's'){
@@ -490,7 +490,7 @@ int main(){
             }
             /// ROUPA
             if (option == '3'){
-                printf("DICA: uga buga\n");
+                printf("DICA:\n - Comprando roupa? Ta sem roupa em casa? Ta andando por ai pelado? Bom, cada um tem seus gostos, sempre bom comprar mais roupas, ainda mais indo em uma jornada onde protecao contra o frio eh importante.\n");
 
                 carteira(dinheiro);
                 printf("quantidade a comprar: ");
@@ -503,11 +503,11 @@ int main(){
 
                 if(escolha_compra == 'n'){
                     clear();
-                    printf("Compra nao efetuada\n");
+                    printf("Sem saldo na carteira...\n");
                     goto shop;
                 }
                 if(escolha_compra == 'N'){
-                    printf("Compra nao efetuada\n");
+                    printf("Sem saldo na carteira...\n");
                     goto shop;
                 }
                 if(escolha_compra == 's'){
@@ -521,7 +521,7 @@ int main(){
             }
 
         spare_parts:
-            printf("opcoes:1 - roda\n2 - eixo\n3 - conector\n4 - sair\n");
+            printf("Vai levar quais pecas patrao:\n 1 - Roda\n2 - Eixo\n3 - Conector\n4 - Nenhuma\n");
             printf("Digite a sua escolha: ");
             scanf(" %c", &option);
 
@@ -552,7 +552,7 @@ int main(){
         purchase_two:
             /// RODA
             if (option == '1'){
-                printf("DICA: uga buga\n");
+                printf("DICA:\n - Vai levar a roda, ou vai levar na roda?\n*Ele te olha com um olhar duvidoso\n");
 
                 carteira(dinheiro);
                 printf("quantidade a comprar: ");
@@ -565,12 +565,12 @@ int main(){
 
                 if(escolha_compra == 'n'){
                     clear();
-                    printf("Compra nao efetuada\n");
+                    printf("Sem saldo na carteira...\n");
                     goto shop;
                 }
 
                 if(escolha_compra == 'N'){
-                    printf("Compra nao efetuada\n");
+                    printf("Sem saldo na carteira...\n");
                     goto shop;
                 }
 
@@ -587,7 +587,7 @@ int main(){
 
             /// EIXO
             if (option == '2'){
-                printf("DICA: uga buga\n");
+                printf("DICA:n\ - Quer pegar no eixo eh?\n*Ele te olha com um olhar questionavel\n");
 
                 carteira(dinheiro);
                 printf("quantidade a comprar: ");
@@ -600,12 +600,12 @@ int main(){
 
                 if(escolha_compra == 'n'){
                     clear();
-                    printf("Compra nao efetuada\n");
+                    printf("Sem saldo na carteira...\n");
                     goto shop;
                 }
 
                 if(escolha_compra == 'N'){
-                    printf("Compra nao efetuada\n");
+                    printf("Sem saldo na carteira...\n");
                     goto shop;
                 }
 
@@ -622,7 +622,7 @@ int main(){
 
             /// CONECTOR
             if (option == '3'){
-                printf("DICA: uga buga\n");
+                printf("DICA:\n - Vai conectar o que?\n*Ele te olha com um olhar ambiguo\n");
 
                 carteira(dinheiro);
                 printf("quantidade a comprar: ");
@@ -635,12 +635,12 @@ int main(){
 
                 if(escolha_compra == 'n'){
                     clear();
-                    printf("Compra nao efetuada\n");
+                    printf("Sem saldo na carteira...\n");
                     goto shop;
                 }
 
                 if(escolha_compra == 'N'){
-                    printf("Compra nao efetuada\n");
+                    printf("Sem saldo na carteira...\n");
                     goto shop;
                 }
 
