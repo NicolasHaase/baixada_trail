@@ -53,6 +53,6 @@ O jogo encerra imediatamente se:
 
 * **Arquitetura:** RISC-V (RV32I).
 * **Gestão de Memória:** Implementação utilizando a Pilha (`sp`) para armazenar variáveis locais, vetores de personagens, estados de saúde e contadores de persistência.
-* **Chamadas de Sistema (Syscalls):** Uso de `syscall 4` (print string), `syscall 5` (read int), `syscall 42` (random com limite), `syscall 32` (sleep) e `syscall 10` (exit para encerramento limpo).
+* **Chamadas de Sistema (Syscalls):** Uso de `syscall 1` (print int), `syscall 4` (print string), `syscall 5` (read int), `syscall 42` (random com limite), `syscall 32` (sleep) e `syscall 10` (exit para encerramento limpo).
 
 
